@@ -1,0 +1,75 @@
+<!DOCTYPE html ng-app="td-movil">
+<html lang="es-VE" ng-app="app-td">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- estilos -->
+    <link rel="stylesheet" href="./bower_components/semantic/dist/semantic.min.css">
+    <link rel="stylesheet" href="./bower_components/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./bower_components/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/sass/main.css">
+    <title>Tendencias | Inicio</title>
+</head>
+<body ng-controller="mainCtrl">
+    <div ng-include="modales"></div>
+    <div ng-include="modalesc"></div>
+    <div class="ui borderless top fixed menu">
+        <div class="item" style="margin: auto">
+            <img src="./assets/images/logo.png">
+        </div>
+    </div>
+
+    <div ng-view></div>
+
+
+    <div class="menuprincipal">
+        <h4 class="ui header center aligned">MENÚ</h4>
+        <div class="ui link list">
+            <a href="#/colecciones" class="active item">Colecciones</a>
+            <a href="#/premios" class="item">Premios</a>
+            <a href="#/collages" class="item">Collages</a>
+        </div>
+    </div>
+    <div class="ui four borderless item labeled icon bottom fixed menu">
+        <a ng-click="openMenu()" class="item active">
+            <i class="interfaces bars icon"></i>
+            Menu
+        </a>
+        <a href="#/" class="item">
+            <i class="interfaces home icon"></i>
+            Inicio
+        </a>
+        <a href="#/oficina" class="item">
+            <i class="video play icon"></i>
+            Oficina
+        </a>
+        <a ng-click="openModalSearch()" class="item">
+            <i class="interfaces search icon"></i>
+            Buscar
+        </a>
+    </div>
+    <!-- scripts -->
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/semantic/dist/semantic.min.js"></script>
+    <script src="./bower_components/fontawesome/js/fontawesome.min.js"></script>
+    <script src="./bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/angular-route/angular-route.min.js"></script>
+    <script src="./bower_components/angular-owl-carousel/src/angular-owl-carousel.js"></script>
+
+    <script src="./src/app.js"></script>
+    <script src="./src/config.js"></script>
+    <script src="./src/controllers/main.Ctrl.js"></script>
+    <script src="./src/controllers/home.Ctrl.js"></script>
+    <script src="./src/controllers/oficina.Ctrl.js"></script>
+    <script src="./src/controllers/search.Ctrl.js"></script>
+    <script src="./src/controllers/collages.Ctrl.js"></script>
+    <script src="./src/controllers/premios.Ctrl.js"></script>
+    <script src="./src/controllers/colecciones.Ctrl.js"></script>
+
+</body>
+
+</html>
