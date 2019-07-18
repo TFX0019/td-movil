@@ -10,12 +10,105 @@
     <link rel="stylesheet" href="./bower_components/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="./bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./bower_components/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./bower_components/Arctext.js/css/style.css">
     <link rel="stylesheet" href="./assets/sass/main.css">
     <title>Tendencias | Inicio</title>
 </head>
 <body ng-controller="mainCtrl">
-    <div ng-include="modales"></div>
-    <div ng-include="modalesc"></div>
+    <!-- modal search -->
+        <div class="searchModal">
+            <div class="ui modal searchm">
+                <div class="content">
+                    <div class="ui grid">
+                        <div class="two wide column">
+                            <button ng-click="closeSearch()" class="ui icon button tbnCloseSearch">
+                                <i class="angle left icon"></i>
+                            </button>
+                        </div>
+                        <div class="fourteen wide column">
+                            <div class="ui search">
+                                <div class="ui icon input">
+                                    <input class="prompt" type="text" placeholder="Buscar">
+                                    <i class="search icon"></i>
+                                </div>
+                                <div class="results"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui list">
+                        <div class="item">
+                            <i class="dot circle outline icon"></i>
+                            <div class="content">
+                                Busca el empaque de tu prenda
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="dot circle outline icon"></i>
+                            <div class="content">
+                                Verifica el Codigo
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="dot circle outline icon"></i>
+                            <div class="content">
+                                Ingresalo
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="question circle icon"></i>
+                            <div class="content">
+                            ¿Tienes alguna pregunta <a href="" ng-click="openModalHelp()">Obtener ayuda</a> ?
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    <!-- modal de contacto -->
+        <div class="contactoModal">
+            <div class="ui modal contactom">
+                <div class="content">
+                    <button ng-click="closeContact()" class="ui icon button btnCloseContacto">
+                        <i class="close icon"></i>
+                    </button>
+
+                    <h2 class="titleContacto">contáctanos</h2>
+
+                    <div class="container">
+                        <form class="ui form">
+                            <div class="field">
+                                <input type="text" name="first-name" placeholder="Nombre">
+                            </div>
+                            <div class="field">
+                                <input type="text" name="last-name" placeholder="Correo electronico">
+                            </div>
+                            <div class="field">
+                                <textarea placeholder="Mensaje" rows="4"></textarea>
+                            </div>
+                            <div class="center aligned">
+                                <button class="ui button" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="info-contacto">
+                        <a href="" class="center aligned">
+                            
+                            <span><i class="icon map marker alternate"></i> <br>Ver ubicación</span>
+                        </a>
+                        <p>Avenida 5 con calle 5, N° 371, Sector La Mata, Cabudare - Estado Lara</p>
+                        <p><a href="">info@tendenciasab.com</a> +58 251 435 8811 / 8812</p>
+                        <p class="pink">Comercializadora e importadora AB de Venezuela C.A</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- <div ng-include="modales"></div> -->
+    <!-- <div ng-include="modalesc"></div> -->
     <div class="ui borderless top fixed menu">
         <div class="item" style="margin: auto">
             <img src="./assets/images/logo.png">
@@ -28,25 +121,25 @@
     <div class="menuprincipal">
         <h4 class="ui header center aligned">MENÚ</h4>
         <div class="ui link list">
-            <a href="#/colecciones" class="active item">Colecciones</a>
+            <a href="#/colecciones" class="item active">Colecciones</a>
             <a href="#/premios" class="item">Premios</a>
             <a href="#/collages" class="item">Collages</a>
         </div>
     </div>
     <div class="ui four borderless item labeled icon bottom fixed menu">
-        <a ng-click="openMenu()" class="item active">
+        <a ng-click="openMenu()" class="item">
             <i class="interfaces bars icon"></i>
             Menu
         </a>
-        <a href="#/" class="item">
-            <i class="interfaces home icon"></i>
+        <a href="#/" ng-class="mHome" class="item">
+            <i class="interfaces home icon" ></i>
             Inicio
         </a>
-        <a href="#/oficina" class="item">
+        <a href="#/oficina" class="item" ng-class="mOficina">
             <i class="video play icon"></i>
             Oficina
         </a>
-        <a ng-click="openModalSearch()" class="item">
+        <a ng-click="openModalSearch()" class="item" ng-class="mSearch">
             <i class="interfaces search icon"></i>
             Buscar
         </a>
@@ -56,6 +149,7 @@
     <script src="./bower_components/semantic/dist/semantic.min.js"></script>
     <script src="./bower_components/fontawesome/js/fontawesome.min.js"></script>
     <script src="./bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="./bower_components/Arctext.js/js/jquery.arctext.js"></script>
     <script src="./bower_components/angular/angular.min.js"></script>
     <script src="./bower_components/angular-route/angular-route.min.js"></script>
     <script src="./bower_components/angular-owl-carousel/src/angular-owl-carousel.js"></script>

@@ -3,18 +3,40 @@
     position: fixed
     bottom: 40px
     z-index: 10
-    background: $grisbg
+    background: $gristext2
     padding: 20px
     border-radius: 25px 25px 0 0
     -webkit-box-shadow: 0 0 8px rgba(0,0,0,.35)
     -moz-box-shadow: 0 0 8px rgba(0,0,0,.35)
     box-shadow: 0 0 8px rgba(0,0,0,.35)
     display: none
+    .ui.header
+        color: $pink
+        font-weight: 600
+    .ui.link.list
+        padding-top: 10px
+        padding-bottom: 20px
+        .item
+            color: $gristext
+            padding: 4px
+            font-weight: 500
+        .active.item
+            color: $pink
+
+.ui.labeled.icon.menu
+    border-top: none
+    .item
+        color: $gristext2
+    .active.item
+        color: $pink
 .ui.menu
     .item
-        padding: 0
+        padding: 10px 50px
     .item>img:not(.ui)
         width: 6em
+    .active.item
+        background: $gristext2
+
 
 .btn-actions
     width: 100%
@@ -23,6 +45,8 @@
     bottom: 50px
     display: flex
     justify-content: space-between
+    z-index: 10
+    background: #fff
     .ui.button
         background: white
         box-shadow: 0 0 10px rgba(0,0,0,.25)

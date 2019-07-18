@@ -1,20 +1,70 @@
-<div class="container-premios">
-    <h5 class="ui header">catálogo de <span>premios</span></h5>
-<div ng-controller="MyController as main">
-    <div owl-carousel="main.owl.items" owl-options="main.owl.options">
-        <div class="item">
-            1
+<div class="container-modal-pages">
+<div class="ui basic modal">
+    <div class="scrolling content">
+        <p class="btn_close" (click)="closePremios()"><button class="ui button"><i class="icon close"></i></button></p>
+        <div class="ui grid">
+            <div class="five wide column">
+                <a href="" class="borde"><img src="./assets/images/premios/1.jpg" width="100%" alt=""></a>
+            </div>
+            <div class="five wide column">
+                <a href="" class="borde"><img src="./assets/images/premios/1.jpg" width="100%" alt=""></a>
+            </div>
+            <div class="five wide column">
+                <a href="" class="borde"><img src="./assets/images/premios/1.jpg" width="100%" alt=""></a>
+            </div>
+            <div class="five wide column">
+                <a href="" class="borde"><img src="./assets/images/premios/1.jpg" width="100%" alt=""></a>
+            </div>
         </div>
     </div>
 </div>
+</div>
+
+<div class="container-premios">
+    <h5 class="ui header">catálogo de <span>premios</span></h5>
+    <div class="revista owl-carousel owl-theme-default">
+        <div class="item">
+            <img src="./assets/images/premios/1.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="./assets/images/premios/1.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="./assets/images/premios/1.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="./assets/images/premios/1.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="./assets/images/premios/1.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="./assets/images/premios/1.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="./assets/images/premios/1.jpg" alt="">
+        </div>
+    </div>
 
 <div class="bar-revista">
     <a href=""><img src="./assets/images/downloader.png" alt=""> <span>Descargar</span></a>
-    <a href=""><img src="./assets/images/paginas.png" alt=""> <span>Paginas</span></a>
+    <a href="" ng-click="openModalPages()"><img src="./assets/images/paginas.png" alt=""> <span>Paginas</span></a>
     <div class="pagination-revista">
-        <a href=""></a>
-        <span>00 / 00</span>
-        <a href=""></a>
+        <a href="" ng-click="premiosNext()">
+            <i class="icon angle left"></i>
+        </a>
+        <span id="pagination-premios">00 / {{ totalItems.total }}</span>
+        <a href="" ng-click="premiosPrev()">
+            <i class="icon angle right"></i>
+        </a>
     </div>
 </div>
+
+    <div class="btn-actions">
+        <button class="ui circular white mini button" ng-click="openContacto()">
+            <i class="icon comment"></i>
+            Contactanos
+        </button>
+    </div>
+
     </div>

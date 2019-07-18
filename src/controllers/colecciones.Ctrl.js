@@ -1,3 +1,3 @@
-app.controller('coleccionesCtrl', ['$scope', function($scope) {
+app.controller('coleccionesCtrl', ['$scope', '$timeout', function($scope,$timeout) {
     
 }])
