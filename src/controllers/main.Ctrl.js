@@ -2,10 +2,10 @@ app.controller('mainCtrl', ['$scope', '$timeout', function ($scope, $timeout) {
     $scope.modales = './src/views/search.tmpl.html';
     $scope.modalesc = './src/views/contacto.tmpl.html';
     //menu active
-    $scope.tabActive = function(page) {
-        $scope.mHome = "";
-        $scope[page] = "active";
-        console.log($scope[page])
+    $scope.tabActive = function(itemM) {
+        $scope.mmHome="";
+        $scope.oficina="";
+        $scope[itemM]="active";
     }
 
     $scope.openModalSearch = function () {

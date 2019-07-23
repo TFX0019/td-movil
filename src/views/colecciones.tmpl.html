@@ -1,100 +1,137 @@
 <div class="container-colecciones">
-    <div class="ui breadcrumb">
-        <a class="section">Colecciones</a>
-        <i class="right angle icon divider"></i>
-        <a class="active section">Intima</a>
+
+    <!-- menu categorias -->
+    <div class="ui styled accordion">
+        <div class="title">
+            <span>dama</span>
+            <i class="angle down icon"></i>
+        </div>
+        <div class="content">
+            <a class="transition hidden">Intima</a>
+            <a class="transition hidden active">Intima</a>
+        </div>
+        <div class="title active">
+            <span>Hogar</span>
+            <i class="angle down icon"></i>
+        </div>
+        <div class="content ">
+            <a class="transition hidden">Intima</a>
+            <a class="transition hidden active">Intima</a>
+        </div>
+        <div class="title">
+            <span>caballero</span>
+            <i class="angle down icon"></i>
+        </div>
+        <div class="content">
+            <a class="transition hidden">Intima</a>
+            <a class="transition hidden active">Intima</a>
+        </div>
+            <div class="title">
+                <span>maquillage</span>
+                <i class="angle down icon"></i>
+            </div>
+            <div class="content">
+                <a href="">Intima</a>
+            </div>
     </div>
 
+<!-- fin del menu -->
+
+<div class="ui breadcrumb">
+    <a class="section">Colecciones</a>
+    <i class="right angle icon divider"></i>
+    <a class="active section">Intima</a>
+</div>
     <div class="btn-colecciones">
         <a href=""><img src="./assets/images/downloader.png" alt=""></a>
         <a href=""><img src="./assets/images/whatsapp.png" alt=""></a>
         <a href=""><img src="./assets/images/facebook.png" alt=""></a>
         <a href=""><img src="./assets/images/twitter.png" alt=""></a>
-        <a href=""><img src="./assets/images/plus.png" alt=""></a>
-    </div>
-
-    <div class="ui grid" style="width: 100%; overflow: hidden;">
-        <div class="ten wide column">
-            <img src="../../assets/images/colecciones/cart2.jpg" width="100%" alt="">
-        </div>
-        <div class="six wide column slideItems">
-            <a><img src="http://placehold.it/320x240?text=Slide%200" width="100%"></a>
-            <a><img src="http://placehold.it/320x240?text=Slide%201" width="100%"></a>
-            <a><img src="http://placehold.it/320x240?text=Slide%202" width="100%"></a>
-            <a><img src="http://placehold.it/320x240?text=Slide%203" width="100%"></a>
-            <a><img src="http://placehold.it/320x240?text=Slide%204" width="100%"></a>
-            <a><img src="http://placehold.it/320x240?text=Slide%205" width="100%"></a>
-            <a><img src="http://placehold.it/320x240?text=Slide%206" width="100%"></a>
-            <a><img src="http://placehold.it/320x240?text=Slide%207" width="100%"></a>
-        </div>
-    </div>
-
-    <a href="" class="ver-mas-colecciones"><span>ver más</span> <i class="down angle icon divider"></i></a>
-
-
-    <div class="ui grid" style="margin-top: 100px;">
-        <div class="eight wide column">
-            <a href="">
-                <img src="./assets/images/colecciones/cart2.jpg" width="100%" alt="">
-            </a>
-        </div>
-        <div class="eight wide column">
-            <a href="">
-                <img src="./assets/images/colecciones/cart2.jpg" width="100%" alt="">
-            </a>
-        </div>
-        <div class="eight wide column">
-            <a href="">
-                <img src="./assets/images/colecciones/cart2.jpg" width="100%" alt="">
-            </a>
-        </div>
-
-        <div class="eight wide column">
-            <a href="">
-                <img src="./assets/images/colecciones/cart2.jpg" width="100%" alt="">
-            </a>
-        </div>
-        <div class="eight wide column">
-            <a href="">
-                <img src="./assets/images/colecciones/cart2.jpg" width="100%" alt="">
-            </a>
-        </div>
-        <div class="eight wide column">
-            <a href="">
-                <img src="./assets/images/colecciones/cart2.jpg" width="100%" alt="">
-            </a>
-        </div>
-        <div class="eight wide column">
-            <a href="">
-                <img src="./assets/images/colecciones/cart2.jpg" width="100%" alt="">
-            </a>
-        </div>
-        <div class="eight wide column">
-            <a href="">
-                <img src="./assets/images/colecciones/cart2.jpg" width="100%" alt="">
-            </a>
-        </div>
-        <div class="eight wide column">
-            <a href="">
-                <img src="./assets/images/colecciones/cart2.jpg" width="100%" alt="">
-            </a>
-        </div>
-    </div>
-
-
-    <div class="btn-actions">
-        <button class="ui circular white mini button" ng-click="openContacto()">
-            <i class="icon comment"></i>
-            Contactanos
+        <button ng-click="openCategorias()" class="ui circular icon button btnPlus">
+            <i class="icon plus"></i>
         </button>
-        <div>
-            <button class="ui circular icon button">
-                <i class="icon plus"></i>
-            </button>
-            <button class="ui circular icon button">
-                <i class="icon angle double up"></i>
-            </button>
-        </div>
     </div>
+
+        <div class="ui grid" style="width: 100%; overflow: hidden; margin-top: 15px;">
+            <div class="ten wide column">
+                <img src="../../assets/images/colecciones/cart2.jpg" width="100%" alt="">
+            </div>
+            <div class="six wide column slideItems">
+                <a><img src="http://placehold.it/320x240?text=Slide%200" width="100%"></a>
+                <a><img src="http://placehold.it/320x240?text=Slide%201" width="100%"></a>
+                <a><img src="http://placehold.it/320x240?text=Slide%202" width="100%"></a>
+                <a><img src="http://placehold.it/320x240?text=Slide%203" width="100%"></a>
+                <a><img src="http://placehold.it/320x240?text=Slide%204" width="100%"></a>
+                <a><img src="http://placehold.it/320x240?text=Slide%205" width="100%"></a>
+                <a><img src="http://placehold.it/320x240?text=Slide%206" width="100%"></a>
+                <a><img src="http://placehold.it/320x240?text=Slide%207" width="100%"></a>
+            </div>
+        </div>
+
+        <a href="" style="margin-top: 15px;" class="ver-mas-colecciones"><span>ver más</span> <i class="down angle icon divider"></i></a>
+
+            <div class="ui grid" style="width: 100%; margin: auto; margin-top: 100px; margin-bottom: 120px; overflow: hidden;">
+                <div class="eight wide column">
+                    <a href="">
+                        <img src="./assets/images/colecciones/cart2.jpg" width="100%" alt="">
+                    </a>
+                </div>
+                <div class="eight wide column">
+                    <a href="">
+                        <img src="./assets/images/colecciones/cart2.jpg" width="100%" alt="">
+                    </a>
+                </div>
+                <div class="eight wide column">
+                    <a href="">
+                        <img src="./assets/images/colecciones/cart2.jpg" width="100%" alt="">
+                    </a>
+                </div>
+
+                <div class="eight wide column">
+                    <a href="">
+                        <img src="./assets/images/colecciones/cart2.jpg" width="100%" alt="">
+                    </a>
+                </div>
+                <div class="eight wide column">
+                    <a href="">
+                        <img src="./assets/images/colecciones/cart2.jpg" width="100%" alt="">
+                    </a>
+                </div>
+                <div class="eight wide column">
+                    <a href="">
+                        <img src="./assets/images/colecciones/cart2.jpg" width="100%" alt="">
+                    </a>
+                </div>
+                <div class="eight wide column">
+                    <a href="">
+                        <img src="./assets/images/colecciones/cart2.jpg" width="100%" alt="">
+                    </a>
+                </div>
+                <div class="eight wide column">
+                    <a href="">
+                        <img src="./assets/images/colecciones/cart2.jpg" width="100%" alt="">
+                    </a>
+                </div>
+                <div class="eight wide column">
+                    <a href="">
+                        <img src="./assets/images/colecciones/cart2.jpg" width="100%" alt="">
+                    </a>
+                </div>
+            </div>
+
+                <div class="btn-actions">
+                    <button class="ui circular white mini button" ng-click="openContacto()">
+                        <i class="icon comment"></i>
+                        Contactanos
+                    </button>
+                    <div>
+                        <button class="ui circular icon button" ng-click="openCategorias()">
+                            <i class="icon plus"></i>
+                        </button>
+                        <button class="ui circular icon button">
+                            <i class="icon angle double up"></i>
+                        </button>
+                    </div>
+                </div>
 
 </div>

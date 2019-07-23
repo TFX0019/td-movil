@@ -4,7 +4,7 @@
   position: fixed;
   bottom: 40px;
   z-index: 10;
-  background: #b7b7b7;
+  background: #efefef;
   padding: 20px;
   border-radius: 25px 25px 0 0;
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
@@ -30,30 +30,7 @@
 
 .menuprincipal .ui.link.list .active.item {
   color: #d90466;
-}
-
-.ui.labeled.icon.menu {
-  border-top: none;
-}
-
-.ui.labeled.icon.menu .item {
-  color: #b7b7b7;
-}
-
-.ui.labeled.icon.menu .active.item {
-  color: #d90466;
-}
-
-.ui.menu .item {
-  padding: 10px 50px;
-}
-
-.ui.menu .item > img:not(.ui) {
-  width: 6em;
-}
-
-.ui.menu .active.item {
-  background: #b7b7b7;
+  background: #efefef;
 }
 
 .btn-actions {
@@ -85,6 +62,22 @@
   position: fixed;
   bottom: 0;
   left: 0;
+}
+
+.ui.labeled.icon.menu {
+  background: #fff;
+  border-top: none;
+  border: none;
+}
+
+.ui.labeled.icon.menu .item {
+  color: #4a4a4a;
+  border-radius: 15px 15px 0 0;
+}
+
+.ui.labeled.icon.menu .active.item {
+  color: #d90466;
+  background: #4a4a4a;
 }
 
 .oficina-container {
@@ -175,7 +168,7 @@
 }
 
 .searchm .ui.list .item {
-  color: #b7b7b7;
+  color: #f5f5f5;
 }
 
 .searchm .ui.list .item i {
@@ -239,7 +232,7 @@
 
 .contactom .ui.form .field input {
   background: #efefef;
-  color: #b7b7b7;
+  color: #f5f5f5;
   border: none;
   text-align: center;
   font-weight: 600;
@@ -247,7 +240,7 @@
 
 .contactom .ui.form .field textarea {
   background: #efefef;
-  color: #b7b7b7;
+  color: #f5f5f5;
   border: none;
   text-align: center;
   font-weight: 600;
@@ -316,7 +309,6 @@
 
 .container-colecciones .ui.breadcrumb a {
   color: #4a4a4a;
-  font-weight: normal;
 }
 
 .container-colecciones .ui.breadcrumb a.active {
@@ -343,6 +335,14 @@
 .container-colecciones .btn-colecciones a img {
   width: 20px;
   height: 20px;
+}
+
+.container-colecciones .btn-colecciones .btnPlus {
+  background: #fff;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  color: #d90466;
 }
 
 .container-colecciones .ver-mas-colecciones {
@@ -377,6 +377,56 @@
 
 .slideItems::-webkit-scrollbar {
   display: none;
+}
+
+.ui.styled.accordion {
+  width: 60%;
+  position: fixed;
+  bottom: 120px;
+  right: -60%;
+  border-radius: 25px 0 0 25px;
+  overflow: hidden;
+  z-index: 999;
+  -webkit-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
+  border: none;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+}
+
+.ui.styled.accordion .title {
+  background: #f5f5f5;
+  color: #d90466;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+}
+
+.ui.styled.accordion .active.title {
+  background: #f5f5f5;
+  color: #d90466;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.ui.styled.accordion .content a {
+  color: #4a4a4a;
+  text-decoration: none;
+  width: 100%;
+  display: inline-block;
+}
+
+.ui.styled.accordion .content a.active {
+  color: #d90466;
 }
 
 .container-premios {
